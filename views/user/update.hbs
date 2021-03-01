@@ -1,0 +1,108 @@
+
+<style>
+  
+  /* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 1200px;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #67c56a;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+  div {
+    /*text ve buton kısımlarının arka kısmı*/
+    border-radius: 1px;
+    padding: 10px;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(to right,rgba(196, 147, 221, 0.6),rgba(237, 222, 245, 0.5)),url("/img/IMG_20200207_174655.jpg"); 
+    /*text ve buton kısımlarının arkasındaki resim*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    opacity: 1;
+  }
+
+  .kapsamresim img {
+    height: 30%;
+    width: 20%;
+    border: 1vh;
+    border-radius: 5%;
+
+  }
+
+
+  
+</style>
+
+
+<h3>{{viewTitle}}</h3>
+
+
+<form action="/user/update" method="POST">
+    <div class="form-group">
+      <label>name</label>
+      <input type="text" name="name"  class="form-control" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <label>name update</label>
+      <input type="text" name="name"  class="form-control" placeholder="Name">
+    </div>
+    
+
+
+    
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Update</button>
+</div>
+
+</form>
+
+    </div>
+    
+
+    
+   
+
+    
+    <p class="lead mt-4">
+         <a href="/user/login">Login</a>
+      </p>
+      <p class="lead mt-4">
+         <a href="/user/login">Login </a>
+      </p>
+</form>

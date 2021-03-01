@@ -1,0 +1,39 @@
+<table class=" offset-4 table table-striped">
+    <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>Surname</th>
+
+        <th>email</th>
+        <th>phone</th>
+        <th>city</th>
+        <th>address</th>
+        <th>age</th>
+
+
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.surname}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.address}}</td>
+            <td>{{this.age}}</td>
+<td>
+    <a><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+        <a><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+
+</td>
+
+
+
+
+
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

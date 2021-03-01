@@ -1,0 +1,262 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabzon</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: rgb(250, 246, 210);
+        }
+        p{
+            
+            border-radius: 10px;
+            width: 450px;
+            
+    
+            padding:10px;
+            padding-left:30px;
+        }
+        
+        
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+
+
+
+
+
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Logo</a>
+    
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="hakkinda">Hakkında</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anasayfa">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletisim">İletişim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nelervar">Neler Var</a>
+          </li>
+          <form style="padding-left:700px; padding-right: 1px;" class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text"  placeholder="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+      </nav>
+      <div class="sidebar">
+        <a class="active" href="gaziantep">Gaziantep</a>
+        <a href="malatya">Malatya</a>
+        <a href="ankara">Ankara</a>
+        <a href="trabzon">Trabzon</a>
+        <a href="nevsehir">Nevşehir</a>
+        <a href="nevsehir">Nevşehir</a>
+        <a href="adiyaman">Adıyaman</a>
+        <a href="adana">Adana</a>
+        <a href="rize">Rize</a>
+        <a href="giresun">Giresun</a>
+        <a href="kars">Kars</a>
+        <a href="diyarbakir">Diyarbakır</a>
+        <a href="antalya">Antalya</a>
+        <a href="konya">Konya</a>
+        <a href="sanliurfa">Şanlıurfa</a>
+        <a href="istanbul">İstanbul</a>
+        <a href="istanbul">İstanbul</a>
+
+
+      </div>
+
+
+     
+
+
+
+        <div style="margin-left:200px;">
+
+
+        <h1>TRABZON'DAN KESİTLER</h1>
+        <hr>
+      
+        </div>
+        <!-- Portfolio Gallery Grid -->
+        <div class="row" style="margin-left:180px;">
+          <div class="column">
+            <div class="breadcrumb">
+              <a href="ayasofya.hbs" target="_blank">
+              <img src="/img/ayasofya-trabzon.png" alt="Ayasofya" style="width:30vh; height: 30vh;">
+            </a>
+              <h3>Ayasofya Camii</h3>
+              <p>Ayasofya Camii, Trabzon'un Ayasofya Mahallesi'nde bulunan bir cami, eski kilise ve müze. 
+                28 Haziran 2013 Cuma günü vakit namazının kılınmasıyla, 
+                49 yıl sonra yeniden Müslümanların ibadetine açılmıştır.
+                Eskiden  ise Azize Sofya Kilisesi olarak bilinmektedir.</p>
+     
+            </div>
+          </div>
+          <div class="column">
+            <div class="breadcrumb">
+              <a href="uzungol.hbs" target="_blank">
+            <img src="/img/uzungol.png" alt="Uzungöl"  style="width:30vh; height: 30vh;">
+          </a>
+              <h3>Uzungöl</h3>
+              <p>Uzungöl, Türkiye'nin Trabzon ilinde yer alan bir heyelan set gölüdür. Çaykara ilçesinin Uzungöl Mahallesi'nde bulunur. Yamaçlardan düşen kayaların, Haldizen deresinin önünü kapatmasıyla oluşmuştur.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="breadcrumb">
+              <a href="ataturkosku.hbs" target="_blank">
+            <img src="/img/ataturkkosku1.png" alt="Ataturkkosku"  style="width:30vh; height: 30vh;">
+            </a>
+              <h3>Atatürk Köşkü</h3>
+              <p>Trabzon Atatürk Köşkü, Soğuksu semtinde küçük bir çam korusu içinde yer alır. 
+                Yirminci yüzyılın hemen başında yaptırılmış 1923'ten sonra hazineye kalmıştır. 
+                Atatürk 1934 ve 1937 yıllarındaki Trabzon ziyaretlerinde, bu köşkte konuk edilmiştir.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="breadcrumb">
+              <a href="sumela.hbs" target="_blank">
+            <img src="/img/sumela.png" alt="SumelaManastırı"  style="width:30vh; height: 30vh;">
+              </a>
+              <h3>Sümela Manastırı</h3>
+              <p>Sümela Manastırı, Trabzon ilinin Maçka ilçesindeki Altındere vadisi sınırları içerisinde yer alan 
+                Meryem Ana Deresi'nin batı yamaçlarında yer alan, 
+                Kara tepesinin üzerinde ve deniz seviyesinden 1.150 m yükseklikte konumlanmış Rum Ortodoks manastır ve kilise kompleksidir.</p>
+            </div>
+          
+        <!-- END GRID -->
+        </div>
+        
+       
+  
+      
+
+  
+
+    
+</body>

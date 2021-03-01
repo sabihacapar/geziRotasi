@@ -1,0 +1,172 @@
+
+<head>
+  <title>Anasayfa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      color:rgb(7, 14, 11);
+      background-color: rgb(177, 219, 247);
+
+    }
+    
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+    * {
+  box-sizing: unset;
+}
+
+.column {
+  float: right;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: left;
+  display: block;
+}
+
+    
+    
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <!-- Brand -->
+        <a class="navbar-brand" href="#">Logo</a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="hakkinda">Hakkında</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anasayfa">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="yemek">Yemek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ulasim">Ulaşım</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tarih">Tarihi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletisim">İletişim</a>
+          </li>
+         
+        <form style="padding-left:300px; padding-right: 1px;" class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" style="padding-right: 400px; padding-left: 25px;" placeholder="Search">
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+      </nav>
+      <div class="sidebar">
+        <a class="active" href="gaziantep">Gaziantep</a>
+        <a href="malatya">Malatya</a>
+        <a href="ankara">Ankara</a>
+        <a href="trabzon">Trabzon</a>
+        <a href="nevsehir">Nevşehir</a>
+        <a href="adiyaman">Adıyaman</a>
+        <a href="adana">Adana</a>
+        <a href="rize">Rize</a>
+        <a href="giresun">Giresun</a>
+        <a href="kars">Kars</a>
+        <a href="diyarbakir">Diyarbakır</a>
+        <a href="antalya">Antalya</a>
+        <a href="konya">Konya</a>
+        <a href="sanliurfa">Şanlıurfa</a>
+        <a href="istanbul">İstanbul</a>
+        <a href="istanbul">İstanbul</a>
+
+
+      </div>
+      
+      <div style="margin-left: 500px;">
+        <h2><b>GEZ - GÖR - EĞLEN</b></h2>
+      </div>
+
+
+<div class="row">
+  
+<div class="column">
+         
+<img src="/img/karadeniz.png"  alt="Cinque Terre" style="width: 50vh; height: 50vh; margin-left: 220px;"></div>
+
+  <div class="column">
+<img src="/img/anitkabir.png"  alt="Cinque Terre"  style="width: 50vh; height: 50vh; margin-left: 220px;"></div>
+ 
+  <div class="column">
+    <img src="/img/uzungol.png" style="width: 50vh; height: 50vh; margin-left: 220px; margin-top:0vh" >
+  </div>
+</div>
+ </div>
+<div style="margin-left: 180px;">
+  <p><pre><h5>
+    <b>Gezmek mi istiyorsunuz ? Gezmek istediğiniz şehir hakkında bilginiz mi yok veyahutta ne yesek diye mi düşünüyorsunuz ?
+    Tüm bu sorularınız yanıtını burada bulabilirsiniz.Gezi Rotası ile gezmek istediğiniz şehirlerin tarihleri hakkında 
+    bilgi edinebilecek, nereye nasıl gidebileceğinizi öğrenecek ve en önemlisi gittiğiniz şehirde
+    ne yesek nerede yesek sıkıntısından kurtulacaksınız.</b> </h5>
+  </pre></p>
+</div>
+      
+
+
+</body>
