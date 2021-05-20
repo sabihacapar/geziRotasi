@@ -1,0 +1,36 @@
+
+
+<form action="/admin" method="POST">
+<input type="hidden" name="_id" value="{{admin.id}}">
+
+ <br>
+    <h2 style="margin-left:30px;">Admin Güncelleme</h2>
+    <hr>
+    <div class="form-group" style="margin-left: 20px; margin-right: 200px;">
+      <label>Name:</label>
+      <input type="text" name="name"  class="form-control" placeholder="Name" value="{{admin.name}}">
+       <div class="text-danger">
+            {{admin.nameError}}
+        </div>
+    </div>
+    <div class="form-group" style="margin-left: 20px; margin-right: 200px;">
+      <label>Sur Name:</label>
+      <input type="text" name="surname"  class="form-control" placeholder=" Sur Name" value="{{admin.surname}}">
+                  {{admin.surnameError}}
+
+    </div>
+    <div class="form-group" style="margin-left: 20px; margin-right: 200px;">
+      <label>Email:</label>
+      <input type="text" name="email" class="form-control" placeholder="Email" value="{{admin.email}}">
+                  {{admin.emailError}}
+
+    </div>
+   
+
+   <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Submit</button>
+         <a class="btn btn-secondary" href="/admin/list"><i class="fa fa-list-alt"></i>View All</a>
+
+</div>
+      
+</form>

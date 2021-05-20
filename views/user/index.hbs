@@ -1,74 +1,112 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Gezi Rotası</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">Logo</a>
 
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="hakkinda">Hakkında</a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="iletisim">İletişim</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="nelervar">Neler Var</a>
-      </li>
-<form>
-      <a href="addOrEdit" style="padding-left:483px;">
-        <button class="btn btn-secondary" type="button"
-          style="padding-left: 10px; padding-right: 24px;">Register</button>
-      </a>
-      <a href="login" style="padding-right:1px;">
-      <button class="btn btn-secondary" type="button">Login</button>
-      </a>
-    </form>
-      <form style="padding-left:200px; padding-right: 1px;" class="form-inline" action="/action_page.php">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-dark" type="submit">Search</button>
-      </form>
+  
+
+  <nav class="navbar  navbar-dark navbar-expand-lg bg-info ">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="hakkinda">Hakkında</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim">İletişim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nelervar">Neler Var</a>
+        </li>
+        <form style="padding-left:300px; padding-right: 1px;" class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/user/addOrEdit"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="/user/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
   </nav>
-  <a href="sanliurfa" target="_blank" style="padding-left: 40px;">
-    <img src="/img/harran.png" width="330" height="330" title="Şanlıurfa harran"/>
-  </a>
-  <a href="sanliurfa" target="_blank">
-    <img src="/img/balikligol.png" width="330" height="330" title="Balıklıgöl" />
-  </a>
-  <a href="malatya" target="_blank">
-    <img src="/img/malatya.png" width="330" height="330" title="Malatya" />
-  </a>
-  <a href="gaziantep" target="_blank">
-    <img src="/img/gaziantep gar.png" width="330" height="330" title="Gar" />
-  </a>
-  <a href="trabzon" target="_blank" style="padding-left: 40px;">
-    <img src="/img/ayasofya-trabzon.png" width="330" height="330" title="Ayasofya" />
-  </a>
-  <a href="trabzon" target="_blank">
-    <img src="/img/karadeniz.png" width="330" height="330" title="Karadeniz" />
-  </a>
-  <a href="kapodokya" target="_blank">
-    <img src="/img/kapodokya.png" width="330" height="330" title="Kapodokya" />
-  </a>
-  <a href="kapodokya" target="_blank">
-    <img src="/img/kapodokya1.png" width="330" height="330" title="Kapodokya" />
-  </a>
+  
 
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail" style="margin-right: 50px; margin-left: 50px;">
+        <img
+          src="https://media.istockphoto.com/photos/clock-tower-in-izmir-stock-image-picture-id479786994?b=1&k=6&m=479786994&s=170667a&w=0&h=DlKSoBvhvoom5pO6nRruU8keXaepIn_8OP2atXnUm0A="
+          alt="İZMİR">
+        <div class="caption">
+          <p>İzmir hakkında daha detaylı bilgi almak için <a href="/user/login">giriş yapınız</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail" style="margin-right: 50px; margin-left: 50px;">
+        <img
+          src="https://media.istockphoto.com/photos/gallipoli-in-turkey-picture-id925020920?b=1&k=6&m=925020920&s=170667a&w=0&h=Q0qb68Im77Q2mVpHkp2z-ot1BhLNPYZecngn15ctXUI="
+          alt="ÇANAKKALE">
+        <div class="caption">
+          <p>Çanakkale hakkında  detaylı bilgi almak için <a href="/user/login">giriş yapınız</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail" style="margin-right: 50px; margin-left: 50px;">
+        <img
+          src="https://media.istockphoto.com/photos/bodrum-town-in-turkey-picture-id930780762?b=1&k=6&m=930780762&s=170667a&w=0&h=xTlzR-Fyt-ikTNYRQfaPmPUJSXOSWNctP5F9UbIGKNA="
+          alt="MUĞLA">
+        <div class="caption">
+          <p>Muğla hakkında daha detaylı bilgi almak için <a href="/user/login"> giriş yapınız </a></p>
+
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="thumbnail" style="margin-right: 50px; margin-left: 50px;">
+        <img
+          src="https://media.istockphoto.com/photos/firtina-valley-in-rize-picture-id1288479282?b=1&k=6&m=1288479282&s=170667a&w=0&h=GiyzKBeru7RuSlPlRrTYqE5DDGar6doRhPT8SlBbqHQ="
+          alt="RİZE">
+        <div class="caption">
+          <p>Rize hakkında  detaylı bilgi almak için <a href="/user/login">giriş yapınız</p>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="thumbnail" style="margin-right: 50px; margin-left: 50px;">
+        <img
+          src="https://media.istockphoto.com/photos/remains-of-ani-capital-of-the-ancient-armenian-bagradit-kingdom-in-picture-id643059910?b=1&k=6&m=643059910&s=170667a&w=0&h=Ei7MRjd2oPOBl6QdtgZNKMzBgaPBAhc4XNb-uQoopDg="
+          alt="KARS">
+        <div class="caption">
+          <p>Kars hakkında  detaylı bilgi almak için <a href="/user/login">giriş yapınız</p>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="thumbnail" style="margin-right: 50px; margin-left: 50px;">
+        <img
+          src="https://media.istockphoto.com/photos/view-of-istanbul-cityscape-galata-tower-with-floating-tourist-boats-picture-id1182582186?b=1&k=6&m=1182582186&s=170667a&w=0&h=XElbMJ_Tet0V_GADh0C3hJoe4iLo3hRFfV-zxA0yEuU="
+          alt="İSTANBUL">
+        <div class="caption">
+          <p>İstanbul hakkında  detaylı bilgi almak için <a href="/user/login">giriş yapınız</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
-</html>

@@ -1,28 +1,28 @@
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankara</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankara</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body{
-            background-color: rgb(241, 191, 161);
-        }
-        p{
-            
-            border-radius: 10px;
-            width: 450px;
-            
-    
-            padding:10px;
-            padding-left:30px;
-        }
-        
-        
+  <style>
+    body {
+      background-color: rgb(241, 191, 161);
+    }
+
+    p {
+
+      border-radius: 10px;
+      width: 450px;
+
+
+      padding: 10px;
+      padding-left: 30px;
+    }
+
+
     .sidebar {
       margin: 0;
       padding: 0;
@@ -32,40 +32,46 @@
       height: 100%;
       overflow: auto;
     }
-    
+
     .sidebar a {
       display: block;
       color: black;
       padding: 16px;
       text-decoration: none;
     }
-     
+
     .sidebar a.active {
       background-color: #4CAF50;
       color: white;
     }
-    
+
     .sidebar a:hover:not(.active) {
       background-color: #555;
       color: white;
     }
-    
+
     div.content {
       margin-left: 200px;
       padding: 1px 16px;
       height: 1000px;
     }
-    
+
     @media screen and (max-width: 700px) {
       .sidebar {
         width: 100%;
         height: auto;
         position: relative;
       }
-      .sidebar a {float: left;}
-      div.content {margin-left: 0;}
+
+      .sidebar a {
+        float: left;
+      }
+
+      div.content {
+        margin-left: 0;
+      }
     }
-    
+
     @media screen and (max-width: 400px) {
       .sidebar a {
         text-align: center;
@@ -78,174 +84,269 @@
 
 
     * {
-  box-sizing: border-box;
-}
+      box-sizing: border-box;
+    }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
 
-.row {
-  margin: 8px -16px;
-}
+    .row {
+      margin: 8px -16px;
+    }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
+    /* Add padding BETWEEN each column */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-
-
-    </style>
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">Logo</a>
-    
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="hakkinda">Hakkında</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="anasayfa">Anasayfa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="iletisim">İletişim</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nelervar">Neler Var</a>
-          </li>
-          <form style="padding-left:700px; padding-right: 1px;" class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-dark" type="submit">Search</button>
-          </form>
-      </nav>
-     <div class="sidebar">
-        <a class="active" href="gaziantep">Gaziantep</a>
-        <a href="malatya">Malatya</a>
-        <a href="ankara">Ankara</a>
-        <a href="trabzon">Trabzon</a>
-        <a href="nevsehir">Nevşehir</a>
-        <a href="nevsehir">Nevşehir</a>
-        <a href="adiyaman">Adıyaman</a>
-        <a href="adana">Adana</a>
-        <a href="rize">Rize</a>
-        <a href="giresun">Giresun</a>
-        <a href="kars">Kars</a>
-        <a href="diyarbakir">Diyarbakır</a>
-        <a href="antalya">Antalya</a>
-        <a href="konya">Konya</a>
-        <a href="sanliurfa">Şanlıurfa</a>
-        <a href="istanbul">İstanbul</a>
-        <a href="istanbul">İstanbul</a>
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Logo</a>
 
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="hakkinda">Hakkında</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="anasayfa">Anasayfa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="iletisim">İletişim</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="nelervar">Neler Var</a>
+      </li>
+      <form style="padding-left:700px; padding-right: 1px;" class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-dark" type="submit">Search</button>
+      </form>
+  </nav>
+  <div class="sidebar">
+
+    <a class="active" href="adana">Adana</a>
+
+    <a href="adiyaman">Adıyaman</a>
+    <a href="afyon">Afyonkarahisar</a>
+    <a href="agri">Ağrı</a>
+    <a href="amasya">Amasya</a>
+    <a href="ankara">Ankara</a>
+    <a href="antalya">Antalya</a>
+    <a href="artvin">Artvin</a>
+    <a href="aydin">Aydın</a>
+
+    <a href="balıkesir">Balıkesir</a>
+    <a href="bilecik">Bilecik</a>
+    <a href="bingol">Bingöl</a>
+    <a href="bitlis">Bitlis</a>
+    <a href="bolu">Bolu</a>
+    <a href="burdur">Burdur</a>
+    <a href="bursa">Bursa</a>
+
+    <a href="canakkale">Çanakkale</a>
+    <a href="cankırı">Çankırı</a>
+    <a href="corum">Çorum</a>
+
+    <a href="denizli">Denizli</a>
+    <a href="diyarbakir">Diyarbakır</a>
+
+    <a href="edirne">Edirne</a>
+    <a href="elazig">Elazığ</a>
+    <a href="erzincan">Erzincan</a>
+    <a href="erzurum">Erzurum</a>
+    <a href="Eskişehir">Eskişehir</a>
+
+    <a href="gaziantep">Gaziantep</a>
+    <a href="giresun">Giresun</a>
+    <a href="gumushane">Gümüşhane</a>
+
+    <a href="hakkari">Hakkari</a>
+    <a href="hatay">Hatay</a>
+
+    <a href="isparta">Isparta</a>
+
+    <a href="mersin">Mersin</a>
+
+    <a href="istanbul">İstanbul</a>
+    <a href="izmir">İzmir</a>
+
+    <a href="kars">Kars</a>
+    <a href="kastamonu">Kastamonu</a>
+    <a href="kayseri">Kayseri</a>
+    <a href="kirklareli">Kırklareli</a>
+    <a href="kirsehir">Kırşehir</a>
+    <a href="kocaeli">Kocaeli</a>
+    <a href="konya">Konya</a>
+    <a href="kütahya">Kütahya</a>
+
+    <a href="malatya">Malatya</a>
+    <a href="manisa">Manisa</a>
+    <a href="maras">Kahramanmaraş</a>
+    <a href="mardin">Mardin</a>
+    <a href="mugla">Muğla</a>
+    <a href="mus">Muş</a>
+
+    <a href="nevsehir">Nevşehir</a>
+    <a href="nigde">Niğde</a>
+
+    <a href="ordu">Ordu</a>
+    <a href="Rize">Rize</a>
+    <a href="sakarya">Sakarya</a>
+    <a href="samsun">Samsun</a>
+    <a href="siirt">Siirt</a>
+    <a href="sinop">Sinop</a>
+    <a href="sivas">Sivas</a>
+
+    <a href="tekirdag">Tekirdağ</a>
+    <a href="tokat">Tokat</a>
+    <a href="trabzon">Trabzon</a>
+    <a href="tunceli">Tunceli</a>
+
+
+    <a href="sanliurfa">Şanlıurfa</a>
+    <a href="usak">Uşak</a>
+    <a href="van">Van</a>
+    <a href="yozgat">Yozgat</a>
+    <a href="zonguldak">Zonguldak</a>
+    <a href="aksaray">Aksaray</a>
+    <a href="bayburt">Bayburt</a>
+    <a href="karaman">Karaman</a>
+    <a href="kirikkale">Kırıkkale</a>
+    <a href="batman">Batman</a>
+    <a href="sirnak">Şırnak</a>
+    <a href="bartin">Bartın</a>
+
+    <a href="ardahan">Ardahan</a>
+    <a href="igdir">Iğdır</a>
+
+
+    <a href="istanbul">İstanbul</a>
+
+
+  </div>
+
+  <div style="margin-left:200px;">
+    <h1>ANKARA</h1>
+    <hr>
+  </div>
+  
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row" style="margin-left:180px;">
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="anitkabir.hbs" target="_blank">
+          <img src="https://media.istockphoto.com/photos/anitkabir-at-sunset-picture-id178433646?b=1&k=6&m=178433646&s=170667a&w=0&h=VcTpCme18MUvm6pXSWgJm_hpYZfkUcjPD4zB-RRA1e0=" alt="Anıtkabir" style="width:30vh; height: 30vh;">
+
+        </a>
+        <h3>Anıtkabir</h3>
+        <p>Anıtkabir, Türkiye'nin başkenti Ankara'nın Çankaya ilçesinde yer alan Mustafa Kemal Atatürk'ün anıt mezarını
+          içeren komplekstir.
+          Emin Onat ile Orhan Arda'nın tasarımı olan yapı kompleksinin 1944'te başlanan inşası 1953'te tamamlanmıştır.
+        </p>
+        <a class="nav-link" href="haritalar">Nasıl Gidilir?</a>
 
       </div>
+    </div>
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="ankarakalesi.hbs" target="_blank">
+          <img src="https://media.istockphoto.com/photos/panoramic-view-of-ankara-turkey-picture-id1257305630?b=1&k=6&m=1257305630&s=170667a&w=0&h=6e9ByU6bP0EU3zKTGIGQ-DVW2sPvpTK8ilHyewmsAmk=" alt="Kale" style="width:30vh; height: 30vh;">
+        </a>
+        <h3>Ankara Kalesi</h3>
+        <p>Ankara Kalesi, Ankara'nın Altındağ ilçesinde bulunan tarihi bir kale.
+          Ne zaman yapıldığı kesin olarak bilinmemekle birlikte
+          MÖ 2. yüzyıl başında Galatların Ankara'ya yerleşmeleri sırasında kalenin var olduğu bilinmektedir.
+          Romalılar, Bizanslılar, Selçuklular ve Osmanlılar dönemlerinde birçok kez onarımdan geçmiştir.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="hacibayramvelicamii.hbs" target="_blank">
+          <img src="data:image/jpeg;base64,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" alt="Cami" style="width:30vh; height: 30vh;">
+        </a>
+        <h3>Hacı Bayram Veli Camii</h3>
+        <p>Hacı Bayram Câmii, Ankara'nın Altındağ ilçesinin Ulus semtinde bulunan tarihi cami.
+          Augustus Tapınağı'nın bitişiğindedir.
+          İlk zaviye olarak yapılış tarihi hicri 831 yılı olan
+          caminin ilk mimarı Mimar Mehmet Bey hakkında bilgi bulunmamaktadır. </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="guvenpark.hbs" target="_blank">
+          <img src="data:image/jpeg;base64,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" alt="Güvenpark" style="width:30vh; height: 30vh;">
+        </a>
+        <h3>Güvenpark</h3>
+        <p>Güvenpark, Ankara, Kızılay Meydanı'nda bulunan parktır.
+          Clemens Holzmeister tarafından meydana bir park ve anıt yapımı projesi sonucu yapılmış, içine Güvenpark Anıtı
+          yerleştirilmiş,
+          park adını bu anıttan almıştır.
+          Güvenpark’ta bugün yetişkin ağaçlar, havuz, oturaklar ve çocuk parkı bulunmaktadır.</p>
+      </div>
+
+      <!-- END GRID -->
+    </div>
+
+    <div class="container">
       
-<div style="margin-left:200px;">
-        <h1>ANKARA</h1>
-        <hr>
-      </div>
-        
-        <!-- Portfolio Gallery Grid -->
-        <div class="row" style="margin-left:180px;">
-          <div class="column" >
-            <div class="breadcrumb">
-              <a href="anitkabir.hbs" target="_blank">
-              <img src="/img/anitkabir.png" alt="Anıtkabir" style="width:30vh; height: 30vh;">
-            </a>
-              <h3>Anıtkabir</h3>
-              <p>Anıtkabir, Türkiye'nin başkenti Ankara'nın Çankaya ilçesinde yer alan Mustafa Kemal Atatürk'ün anıt mezarını içeren komplekstir.
-                 Emin Onat ile Orhan Arda'nın tasarımı olan yapı kompleksinin 1944'te başlanan inşası 1953'te tamamlanmıştır.</p>
-     
-            </div>
-          </div>
-          <div class="column">
-            <div class="breadcrumb">
-              <a href="ankarakalesi.hbs" target="_blank">
-            <img src="/img/ankarakalesi.png" alt="Kale" style="width:30vh; height: 30vh;">
-          </a>
-              <h3>Ankara Kalesi</h3>
-              <p>Ankara Kalesi, Ankara'nın Altındağ ilçesinde bulunan tarihi bir kale. 
-                Ne zaman yapıldığı kesin olarak bilinmemekle birlikte
-                 MÖ 2. yüzyıl başında Galatların Ankara'ya yerleşmeleri sırasında kalenin var olduğu bilinmektedir. 
-                Romalılar, Bizanslılar, Selçuklular ve Osmanlılar dönemlerinde birçok kez onarımdan geçmiştir.</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="breadcrumb">
-              <a href="hacibayramvelicamii.hbs" target="_blank">
-            <img src="/img/hacibayramvelicamii.png" alt="Cami" style="width:30vh; height: 30vh;">
-            </a>
-              <h3>Hacı Bayram Veli Camii</h3>
-              <p>Hacı Bayram Câmii, Ankara'nın Altındağ ilçesinin Ulus semtinde bulunan tarihi cami.
-                 Augustus Tapınağı'nın bitişiğindedir.
-                 İlk zaviye olarak yapılış tarihi hicri 831 yılı olan 
-                 caminin ilk mimarı Mimar Mehmet Bey hakkında bilgi bulunmamaktadır. </p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="breadcrumb">
-              <a href="guvenpark.hbs" target="_blank">
-            <img src="/img/guvenpark.png" alt="Güvenpark" style="width:30vh; height: 30vh;">
-              </a>
-              <h3>Güvenpark</h3>
-              <p>Güvenpark, Ankara, Kızılay Meydanı'nda bulunan parktır. 
-                Clemens Holzmeister tarafından meydana bir park ve anıt yapımı projesi sonucu yapılmış, içine Güvenpark Anıtı yerleştirilmiş, 
-                park adını bu anıttan almıştır.
-                 Güvenpark’ta bugün yetişkin ağaçlar, havuz, oturaklar ve çocuk parkı bulunmaktadır.</p>
-            </div>
-         
-        <!-- END GRID -->
+        <div class="jumbotron" style="background-color: #f1f1f;">
+
+          <p>Ankara hakkında daha detaylı bilgi almak için lütfen <a href="ankaradetay">buraya</a> tıklayınız</p>
+
         </div>
-    
+   
+    </div>
+
 </body>

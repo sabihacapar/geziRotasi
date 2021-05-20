@@ -30,9 +30,10 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #67c56a;
   color: white;
   padding: 16px 20px;
+  margin-top: 600px;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   opacity: 0.9;
 }
 
@@ -48,7 +49,7 @@ input[type=text]:focus, input[type=password]:focus {
 
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image:linear-gradient(to right,rgba(128, 141, 107, 0.6),rgba(237, 222, 245, 0.5)),url("/img/IMG_20200207_174655.jpg"); 
+    background-image:linear-gradient(to right,rgba(241, 204, 250, 0.6),rgba(79, 36, 102, 0.5)),url("/img/IMG_20200207_174655.jpg"); 
     /*text ve buton kısımlarının arkasındaki resim*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,62 +57,42 @@ input[type=text]:focus, input[type=password]:focus {
     opacity: 1;
   }
 
-  .kapsamresim img {
-    height: 30%;
-    width: 20%;
-    border: 1vh;
-    border-radius: 5%;
-
-  }
+  
 
 
   
 </style>
 
+  
 
+<h3> {{viewTitle}}</h3>
 
+<form action="/admin" method="POST">
+<input type="hidden" name="_id" value="{{admin.id}}">
 
-
-<form action="/user" method="POST">
  <br>
-    <h2 style="margin-left:30px;">Gezi Rotası Kayıt Sayfası </h2>
+    <h2 style="margin-left:30px;">Admin Kayıt Sayfası </h2>
     <hr>
     <div class="form-group" style="margin-left: 20px; margin-right: 200px;">
       <label>Name:</label>
-      <input type="text" name="name"  class="form-control" placeholder="Name">
+      <input type="text" name="name"  class="form-control" placeholder="Name" value="{{admin.name}}">
+       <div class="text-danger">
+            {{admin.nameError}}
+        </div>
     </div>
     <div class="form-group" style="margin-left: 20px; margin-right: 200px;">
       <label>Sur Name:</label>
-      <input type="text" name="surname"  class="form-control" placeholder=" Sur Name">
+      <input type="text" name="surname"  class="form-control" placeholder=" Sur Name" value="{{admin.surname}}">
+                  {{admin.surnameError}}
+
     </div>
     <div class="form-group" style="margin-left: 20px; margin-right: 200px;">
       <label>Email:</label>
-      <input type="text" name="email" class="form-control" placeholder="Email">
-    </div>
-    <div class="form-row" style="margin-left: 20px; margin-right: 200px;">
-        <div class="form-group col-md-6">
-      <label>Phone:</label>
-      <input type="text" name="mobile"  class="form-control" placeholder="Mobile">
-    </div>
-     <div class="form-group col-md-6">
-      <label>City:</label>
-      <input type="text" name="city"  class="form-control" placeholder="City">
-    </div>
-    <div class="form-group">
-      <label>Address:</label>
-      <input type="text" name="address"  class="form-control" placeholder="Address">
-    </div>
-    <div class="form-group">
-      <label>Age:</label>
-      <input type="text" name="age"  class="form-control" placeholder="Age">
-    </div>
-    <div class="form-group">
-      <label>Gender:</label>
-      <input type="text" name="gender"  class="form-control" placeholder="Gender">
-    </div>
+      <input type="text" name="email" class="form-control" placeholder="Email" value="{{admin.email}}">
+                  {{admin.emailError}}
 
-
-
+    </div>
+   
 
     <div class="form-group">
       <label>Password:</label>
@@ -121,15 +102,23 @@ input[type=text]:focus, input[type=password]:focus {
     </div>
     <div class="form-group" style="margin-left: 20px; margin-right:500px;">
         <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Register</button>
+         <a class="btn btn-secondary" href="/admin/list"><i class="fa fa-list-alt"></i>View All</a>
+
 </div>
 
 </form>
 
     </div>
-    
-
-    
     <p class="lead mt-4" style="margin-left: 20px;">
-        Zaten kayıtlı mısınız? <a href="/user/login">Login</a>
+        Zaten kayıtlı mısınız? <a href="/admin/signin">Login</a>
       </p>
+      <div class="row">
+  <img src="https://cdn.pixabay.com/photo/2020/01/03/11/44/freedom-4737919__340.jpg" style="margin-left: 40px;" class="float-left" alt="Paris" width="304" height="236"> 
+  <img src="https://cdn.pixabay.com/photo/2021/03/06/11/28/ships-6073537__340.jpg" style="margin-left: 40px;" class="float-right" alt="Paris" width="304" height="236"> 
+  <img src="https://cdn.pixabay.com/photo/2021/03/25/13/34/mountains-6123127__340.jpg" style="margin-left: 40px;" class="float-left" alt="Paris" width="304" height="236"> 
+  <img src="https://cdn.pixabay.com/photo/2020/01/22/18/23/bridge-4785964__340.jpg" style="margin-left: 40px;" class="float-right" alt="Paris" width="304" height="236"> 
+  
+</div>
+
+      
 </form>

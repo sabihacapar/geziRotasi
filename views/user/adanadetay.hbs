@@ -1,0 +1,248 @@
+<head>
+    <title>Gezi Rotası</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgb(241, 191, 161);
+        }
+
+        p {
+
+            border-radius: 10px;
+            width: 450px;
+
+
+            padding: 10px;
+            padding-left: 30px;
+        }
+
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
+
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Logo</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="anasayfa">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="adanatarihce">Tarihçe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="adanananeyenir">Ne Yenir ? </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="adananealinir">Ne Alınır ? </a>
+            </li>
+            <form style="padding-left:700px; padding-right: 1px;" class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+    </nav>
+
+    <div class="sidebar">
+
+        <a class="active" href="aladag">Aladağ</a>
+        <a href="ceyhan">Ceyhan</a>
+        <a href="cukurova">Çukurova</a>
+        <a href="feke">Feke</a>
+        <a href="imamoglu">İmamoğlu</a>
+        <a href="karaisali">Karaisalı</a>
+        <a href="karatas">Karataş</a>
+        <a href="kozan">kozan</a>
+
+        <a href="pozanti">Pozantı</a>
+        <a href="saimbeyli">Saimbeyli</a>
+        <a href="saricam">Sarıçam</a>
+        <a href="seyhan">seyhan</a>
+        <a href="tufanbeyli">tufanbeyli</a>
+        <a href="yumurtalik">Yumurtalık</a>
+        <a href="yuregir">Yüreğir</a>
+        <a href="yuregir">Yüreğir</a>
+
+        <a href="istanbul">İstanbul</a>
+
+
+    </div>
+
+    <div style="margin-left:200px;">
+        <h2>ADANA</h2>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="thumbnail" style="margin-left: 250px; margin-right: 30px;">
+                <img src="https://media.istockphoto.com/photos/varda-railway-bridge-in-adana-city-of-turkey-picture-id1189952016?b=1&k=6&m=1189952016&s=170667a&w=0&h=LD9GTAkzV0ZAx7LMwt31uWxIaAgzzPNC1g3_JYld0-Q="
+                    alt="Adana">
+                <div class="caption">
+                    <p>Adana - Varda (Alman) Köprüsü 'nü ziyaret etmek için <a href="/user/anitkabir">tıklayınız</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="thumbnail" style="margin-left: 250px; margin-right: 30px;">
+                <img src="https://media.istockphoto.com/photos/the-pont-de-pierre-in-bordeaux-picture-id468552469?b=1&k=6&m=468552469&s=170667a&w=0&h=RLUeVI9oBhYZFtaL5jtcugTxMQhF9tsG0dZs_xU6JiM="
+                    alt="kanyon">
+                <div class="caption">
+                    <p>Adana -Taşköprü 'yü ziyaret etmek için <a href="/user/anitkabir">tıklayınız</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="thumbnail" style="margin-left: 250px; margin-right: 30px;">
+                <img src="https://media.istockphoto.com/photos/sabanc-camii-2-picture-id622007540?b=1&k=6&m=622007540&s=170667a&w=0&h=6OmOKIbwGTX4PkczIwMo3iX6edpP-JUrMqzVzj1gaXI="
+                    alt="camii">
+                <div class="caption">
+                    <p>Adana -Sabancı Merkez Camii 'ni ziyaret etmek için <a href="/user/anitkabir">tıklayınız</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="thumbnail" style="margin-left: 250px; margin-right: 30px;">
+                <img src="https://media.istockphoto.com/photos/medieval-castle-in-ceyhan-town-adana-turkey-this-fortress-is-known-as-picture-id1189989805?b=1&k=6&m=1189989805&s=170667a&w=0&h=D8jVdrV1Y9WLu1bAhGnW0LMtGZejopUFki9mOs9eZdE="
+                    alt="müze">
+                <div class="caption">
+                    <p>Adana -Arkeoloji Müzesi 'ni ziyaret etmek için <a href="/user/anitkabir">tıklayınız</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>

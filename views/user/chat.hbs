@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket.io Sample Page</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankara</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin:0;
+            margin-left: 6px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #aaf0f5;
+            font: 13px Helvetica, Arial;
+        }
+
+        form {
+            background: #000;
+            padding: 3px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form input {
+            border: 0;
+            padding: 10px;
+            width: 90%;
+            margin-right: .5%;
+        }
+
+        form button {
+            width: 9%;
+            background: rgb(130, 224, 255);
+            border: none;
+            padding: 10px;
+        }
+
+        #messages {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #messages li {
+            padding: 5px 10px;
+
+        }
+
+        #messages li:nth-child(odd) {
+            background: rgb(177, 218, 216);
+            margin-right: 0;
+
+        }
+        #kullanici{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background:  rgb(124, 180, 51);
+
+        }
+        #kullaniciayrildi{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: rgb(180, 51, 51);
+
+        }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Bunu kesinlikle yazmamız gerekiyor çünkü birazdan yazacağımız kodlar bu dosyayı referans alarak çalışacaktır. -->
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- İşlerimizi çok kolaylaştırdığı için jquery kütüphanesini çağırıyoruz. -->
+</head>
+
+<body>
+   
+    
+
+    <ul id="messages"></ul><!-- Gelen mesajları yazdırmak için bir liste oluşturuyoruz. -->
+    <form action="">
+        <input id="mesaj" autocomplete="off" /><button>Gönder</button>
+        <!-- Forma yazı yazdıktan sonra gönder butonu ile gönderiyoruz. -->
+    </form>
+    <ul id="kullanici"></ul><!-- Gelen mesajları yazdırmak için bir liste oluşturuyoruz. -->
+    <ul id="kullaniciayrildi"></ul><!-- Gelen mesajları yazdırmak için bir liste oluşturuyoruz. -->
+
+
+
+    <script>
+        var socket = io(); // Kullanıcı tarafında da bağlantı nesnemizi oluşturuyoruz.
+
+        $(function () {
+            $('form').submit(function (e) { /* Formu göndermek için alıyor. */
+                e.preventDefault(); // Sayfanın yenilenmesini engelliyor.
+                socket.emit('chat message', $('#mesaj').val()); /* Yazdığımız mesajı alıyor ve socket antenine chat message kodu ile dışarı yayınlıyor. */
+                $('#mesaj').val(''); // Ardından ise bu mesaj kısmını gönderdiği için geri boş hale getiriyor.
+                return false;
+                socket.emit('kullanici',$('#mesaj').val());//kullanıcı sayfaya bağlandığında bilgi verir
+                socket.emit('kullaniciayrildi',$('#mesaj').val());//kullanıcı sayfaya bağlandığında bilgi verir
+
+                
+            });
+            socket.on('chat message', function (msg) { /* yukarıda emit diyerek mesajı yayınladığımız gibi eğer bana chat message başlığı ile bir mesaj gelirse onu ekrana yazdır diyoruz. */
+                $('#messages').append($('<li>').text(msg)); /* gelen mesajı message id'sine sahip elemente text olarak yazdır diyoruz. */
+            });
+            socket.on('kullanici', function (msg) { /* yukarıda emit diyerek mesajı yayınladığımız gibi eğer bana chat message başlığı ile bir mesaj gelirse onu ekrana yazdır diyoruz. */
+                $('#kullanici').append($('<li>').text(msg)); /* gelen mesajı message id'sine sahip elemente text olarak yazdır diyoruz. */
+            });
+            socket.on('kullaniciayrildi', function (msg) { /* yukarıda emit diyerek mesajı yayınladığımız gibi eğer bana chat message başlığı ile bir mesaj gelirse onu ekrana yazdır diyoruz. */
+                $('#kullaniciayrildi').append($('<li>').text(msg)); /* gelen mesajı message id'sine sahip elemente text olarak yazdır diyoruz. */
+            });
+            
+        });
+    </script>
+</body>
+
+</html>

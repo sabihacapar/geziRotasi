@@ -1,0 +1,351 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adana</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: rgb(241, 191, 161);
+    }
+
+    p {
+
+      border-radius: 10px;
+      width: 450px;
+
+
+      padding: 10px;
+      padding-left: 30px;
+    }
+
+
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .sidebar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .sidebar a {
+        float: left;
+      }
+
+      div.content {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+
+
+
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Logo</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="hakkinda">Hakkında</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="anasayfa">Anasayfa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="iletisim">İletişim</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="nelervar">Neler Var</a>
+      </li>
+      <form style="padding-left:700px; padding-right: 1px;" class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-dark" type="submit">Search</button>
+      </form>
+  </nav>
+ 
+  <div class="sidebar">
+
+    <a class="active" href="adana">Adana</a>
+    <a href="adiyaman">Adıyaman</a>
+    <a href="afyon">Afyonkarahisar</a>
+    <a href="agri">Ağrı</a>
+    <a href="amasya">Amasya</a>
+    <a href="ankara">Ankara</a>
+    <a href="antalya">Antalya</a>
+    <a href="artvin">Artvin</a>
+    <a href="aydin">Aydın</a>
+
+    <a href="balıkesir">Balıkesir</a>
+    <a href="bilecik">Bilecik</a>
+    <a href="bingol">Bingöl</a>
+    <a href="bitlis">Bitlis</a>
+    <a href="bolu">Bolu</a>
+    <a href="burdur">Burdur</a>
+    <a href="bursa">Bursa</a>
+
+    <a href="canakkale">Çanakkale</a>
+    <a href="cankırı">Çankırı</a>
+    <a href="corum">Çorum</a>
+
+    <a href="denizli">Denizli</a>
+    <a href="diyarbakir">Diyarbakır</a>
+
+    <a href="edirne">Edirne</a>
+    <a href="elazig">Elazığ</a>
+    <a href="erzincan">Erzincan</a>
+    <a href="erzurum">Erzurum</a>
+    <a href="Eskişehir">Eskişehir</a>
+
+    <a href="gaziantep">Gaziantep</a>
+    <a href="giresun">Giresun</a>
+    <a href="gumushane">Gümüşhane</a>
+
+    <a href="hakkari">Hakkari</a>
+    <a href="hatay">Hatay</a>
+
+    <a href="isparta">Isparta</a>
+
+    <a href="mersin">Mersin</a>
+
+    <a href="istanbul">İstanbul</a>
+    <a href="izmir">İzmir</a>
+
+    <a href="kars">Kars</a>
+    <a href="kastamonu">Kastamonu</a>
+    <a href="kayseri">Kayseri</a>
+    <a href="kirklareli">Kırklareli</a>
+    <a href="kirsehir">Kırşehir</a>
+    <a href="kocaeli">Kocaeli</a>
+    <a href="konya">Konya</a>
+    <a href="kütahya">Kütahya</a>
+
+    <a href="malatya">Malatya</a>
+    <a href="manisa">Manisa</a>
+    <a href="maras">Kahramanmaraş</a>
+    <a href="mardin">Mardin</a>
+    <a href="mugla">Muğla</a>
+    <a href="mus">Muş</a>
+
+    <a href="nevsehir">Nevşehir</a>
+    <a href="nigde">Niğde</a>
+
+    <a href="ordu">Ordu</a>
+    <a href="Rize">Rize</a>
+    <a href="sakarya">Sakarya</a>
+    <a href="samsun">Samsun</a>
+    <a href="siirt">Siirt</a>
+    <a href="sinop">Sinop</a>
+    <a href="sivas">Sivas</a>
+
+    <a href="tekirdag">Tekirdağ</a>
+    <a href="tokat">Tokat</a>
+    <a href="trabzon">Trabzon</a>
+    <a href="tunceli">Tunceli</a>
+
+
+    <a href="sanliurfa">Şanlıurfa</a>
+    <a href="usak">Uşak</a>
+    <a href="van">Van</a>
+    <a href="yozgat">Yozgat</a>
+    <a href="zonguldak">Zonguldak</a>
+    <a href="aksaray">Aksaray</a>
+    <a href="bayburt">Bayburt</a>
+    <a href="karaman">Karaman</a>
+    <a href="kirikkale">Kırıkkale</a>
+    <a href="batman">Batman</a>
+    <a href="sirnak">Şırnak</a>
+    <a href="bartin">Bartın</a>
+
+    <a href="ardahan">Ardahan</a>
+    <a href="igdir">Iğdır</a>
+
+
+    <a href="istanbul">İstanbul</a>
+
+
+  </div>
+
+  <div style="margin-left:200px;">
+    <h1>ADANA</h1>
+    <hr>
+  </div>
+  
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row" style="margin-left:180px;">
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="anitkabir.hbs" target="_blank">
+          <img src="/image/anitkabir.png" alt="Anıtkabir" style="width:30vh; height: 30vh;">
+
+        </a>
+        <h3>Anıtkabir</h3>
+        <p>Anıtkabir, Türkiye'nin başkenti Ankara'nın Çankaya ilçesinde yer alan Mustafa Kemal Atatürk'ün anıt mezarını
+          içeren komplekstir.
+          Emin Onat ile Orhan Arda'nın tasarımı olan yapı kompleksinin 1944'te başlanan inşası 1953'te tamamlanmıştır.
+        </p>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="ankarakalesi.hbs" target="_blank">
+          <img src="/image/ankarakalesi.png" alt="Kale" style="width:30vh; height: 30vh;">
+        </a>
+        <h3>Ankara Kalesi</h3>
+        <p>Ankara Kalesi, Ankara'nın Altındağ ilçesinde bulunan tarihi bir kale.
+          Ne zaman yapıldığı kesin olarak bilinmemekle birlikte
+          MÖ 2. yüzyıl başında Galatların Ankara'ya yerleşmeleri sırasında kalenin var olduğu bilinmektedir.
+          Romalılar, Bizanslılar, Selçuklular ve Osmanlılar dönemlerinde birçok kez onarımdan geçmiştir.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="hacibayramvelicamii.hbs" target="_blank">
+          <img src="/image/hacibayramvelicamii.png" alt="Cami" style="width:30vh; height: 30vh;">
+        </a>
+        <h3>Hacı Bayram Veli Camii</h3>
+        <p>Hacı Bayram Câmii, Ankara'nın Altındağ ilçesinin Ulus semtinde bulunan tarihi cami.
+          Augustus Tapınağı'nın bitişiğindedir.
+          İlk zaviye olarak yapılış tarihi hicri 831 yılı olan
+          caminin ilk mimarı Mimar Mehmet Bey hakkında bilgi bulunmamaktadır. </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="breadcrumb">
+        <a href="guvenpark.hbs" target="_blank">
+          <img src="/image/guvenpark.png" alt="Güvenpark" style="width:30vh; height: 30vh;">
+        </a>
+        <h3>Güvenpark</h3>
+        <p>Güvenpark, Ankara, Kızılay Meydanı'nda bulunan parktır.
+          Clemens Holzmeister tarafından meydana bir park ve anıt yapımı projesi sonucu yapılmış, içine Güvenpark Anıtı
+          yerleştirilmiş,
+          park adını bu anıttan almıştır.
+          Güvenpark’ta bugün yetişkin ağaçlar, havuz, oturaklar ve çocuk parkı bulunmaktadır.</p>
+      </div>
+
+      <!-- END GRID -->
+    </div>
+
+    <div class="container">
+      
+        <div class="jumbotron" style="background-color: #f1f1f;">
+
+          <p>Adana hakkında daha detaylı bilgi almak için lütfen <a href="adanadetay">buraya</a> tıklayınız</p>
+
+        </div>
+   
+    </div>
+
+</body>
